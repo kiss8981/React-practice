@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Modal, Button, Form, Container } from "react-bootstrap";
-import { GoogleLogin } from "react-google-login";
-import HorizontalLine from "../components/HorizontalLine";
-import GoogleLogoImg from "../assets/images/ico_login_google.svg";
+import PasswordStrengthMeter from '../components/passwordcheck';
+
 
 const SignUpModal = ({ show, onHide }) => {
+  const [ password, setPassword ] = useState('');
   return (
     <Modal
       show={show}
@@ -31,23 +31,12 @@ const SignUpModal = ({ show, onHide }) => {
 
             <Form.Group>
               <Form.Label>비밀번호</Form.Label>
-              <Form.Control type="password" placeholder="비밀번호" />
-              <Form.Control type="password" placeholder="비밀번호 확인" className="my-2" />
+              <Form.Control name="user-password" type="password" onChange={e => setPassword(e.target.value)}/>
+              <PasswordStrengthMeter password={password} />
             </Form.Group>
             <Button block type="button" className="social-btn my-3">
               회원가입
             </Button>
-            <HorizontalLine text={"OR"} />
-            <GoogleLogin
-              render={(renderProps) => {
-                return (
-                  <Button block type="button" className="social-btn" onClick={renderProps.onClick}
-                  ><img src={GoogleLogoImg} alt="GOOGLE_LOGIN"/> 구글 로그인
-                  </Button>
-                );
-              }}
-            />
-            
           </Form>
         </Modal.Body>
       </Container>
