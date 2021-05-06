@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Container, Alert } from "react-bootstrap";
 import PasswordStrengthMeter from '../components/passwordcheck';
-
+import naverImg from '../img/naver.png'
 
 const SignUpModal = ({ show, onHide }) => {
   const [ password, setPassword ] = useState('');
@@ -40,10 +40,10 @@ const SignUpModal = ({ show, onHide }) => {
             <i class="fas fa-sign-in-alt"></i>&nbsp; 회원가입
             </Button>
             <Button type="button" className="social-btn mr-1">
-            <i class="fab fa-google"></i>&nbsp;구글
+            <i class="fab fa-google"></i>&nbsp;구글 
             </Button>
             <Button type="button" className="social-btn ml-1">
-            <i class="fas fa-user-circle"></i>&nbsp;네이버
+            <img src={"../img/naver.png"} />&nbsp;네이버
             </Button>
           </Form>
         </Modal.Body>

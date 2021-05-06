@@ -8,6 +8,14 @@
 }
 
 .FormUser {
-  width: 90%;
-  margin: 7% auto;
+  width: 95%;
+  margin: 0% auto;
+}
+
+.signup-btn {
+  opacity: 0.7;
+}
+
+.signup-btn:hover {
+  opacity: 1;
 }
