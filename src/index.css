@@ -1,7 +1,13 @@
 .social-btn {
   opacity: .5;
+  width: calc(50% - 4px);
 }
 
 .social-btn:hover {
   opacity: 1;
+}
+
+.FormUser {
+  width: 90%;
+  margin: 7% auto;
 }
