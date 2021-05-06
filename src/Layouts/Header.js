@@ -17,6 +17,7 @@ const Header = () => {
                         <Nav.Link href="#home">홈</Nav.Link>
                         <Nav.Link href="#link">블로그</Nav.Link>
                     </Nav>
+                    <hr></hr>
                     <Nav className="ml-auto">
                         <Nav.Link onClick={() => setSignInModalOn(true)}>로그인</Nav.Link>
                     </Nav>

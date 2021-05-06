@@ -38,7 +38,8 @@ const SignInModal = ({ show, onHide }) => {
             <Button type="button" className="social-btn ml-1">
             <img src={naverImg} alt="naverIMG" className="fab" style={{maxWidth: "15px", maxHeight: "15px", marginBottom: "4.5px" }}/>&nbsp;네이버
             </Button>
-            <Button block type="button" style={{border: "none", textDecoration: "underline"}} className="signup-btn my-3">
+            <hr></hr>
+            <Button block type="button" style={{border: "none", textDecoration: "underline"}} className="signup-btn">
               이메일로 가입하기
             </Button>
             </Form>
