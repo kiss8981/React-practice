@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Container, Alert } from "react-bootstrap";
 import PasswordStrengthMeter from '../components/passwordcheck';
-import naverImg from '../img/naver.png'
 
 const SignUpModal = ({ show, onHide }) => {
   const [ password, setPassword ] = useState('');
@@ -32,18 +31,12 @@ const SignUpModal = ({ show, onHide }) => {
                 <Form.Control type="text" placeholder="이름"/>
             </Form.Group>
             <Form.Group>
-              <Form.Label>비밀번호</Form.Label>
+              <Form.Label><i class="fas fa-lock"/> 비밀번호</Form.Label>
               <Form.Control name="user-password" type="password" placeholder="비밀번호" onChange={e => setPassword(e.target.value)}/>
               <PasswordStrengthMeter password={password} />
             </Form.Group>
             <Button block type="button" className="social-btn my-3">
             <i class="fas fa-sign-in-alt"></i>&nbsp; 회원가입
-            </Button>
-            <Button type="button" className="social-btn mr-1">
-            <i class="fab fa-google"></i>&nbsp;구글 
-            </Button>
-            <Button type="button" className="social-btn ml-1">
-            <img src={"../img/naver.png"} />&nbsp;네이버
             </Button>
           </Form>
         </Modal.Body>
