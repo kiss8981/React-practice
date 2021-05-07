@@ -19,3 +19,7 @@
 .signup-btn:hover {
   opacity: 1;
 }
+
+.backgroundimg {
+  max-height: 650px;
+}

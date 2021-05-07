@@ -1,14 +1,18 @@
-import { Container } from "react-bootstrap";
+import { Route, BrowserRouter } from 'react-router-dom';
 import Layout from './Layouts/Layout';
+import Home from './Pages/home'
+import blog from './Pages/blog'
+
 
 
 function App() {
   return (
-    <Layout>
-      <Container>
-        App
-      </Container>
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/blog" component={blog}/>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
