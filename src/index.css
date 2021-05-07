@@ -23,3 +23,18 @@
 .backgroundimg {
   max-height: 650px;
 }
+
+.mainPage {
+  text-align: left;
+  margin-bottom: 15%;
+}
+
+.logo {
+  max-width: 13%;
+}
+
+.mainPageHr {
+  color: white;
+  background-color: white;
+  max-width: 20%;
+}
