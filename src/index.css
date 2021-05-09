@@ -43,13 +43,11 @@
 .card {
   margin-top: 10px;
   margin: 0 auto;
-  padding: 10;
   transition: all .2s ease-in-out;
 }
 
 .card:hover {
   margin-top: 10px;
   margin: 0 auto;
-  padding: 10;
   transform: scale(1.03);
 }

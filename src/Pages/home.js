@@ -43,7 +43,7 @@ class home extends Component {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <Container className="mainPage">
+              <Container className="mainPage mt-3">
                 <h3>세번째 페이지</h3>
                 <hr className="mainPageHr" align="left"/>
                 <p>세번째 페이지 설명</p>
@@ -103,6 +103,46 @@ class home extends Component {
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">Last updated 11 mins ago</small>
+              </Card.Footer>
+            </Card>
+
+            <Card className="card">
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Card title </Card.Title>
+                <Card.Text>
+                  Card Text This card has supporting text below as a natural lead-in
+                  to additional content.{" "}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 10 mins ago</small>
+              </Card.Footer>
+            </Card>
+            <Card className="card">
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Card title </Card.Title>
+                <Card.Text>
+                  Card Text This card has supporting text below as a natural lead-in
+                  to additional content.{" "}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 10 mins ago</small>
+              </Card.Footer>
+            </Card>
+            <Card className="card">
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  Card Text This card has supporting text below as a natural lead-in
+                  to additional content.{" "}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 10 mins ago</small>
               </Card.Footer>
             </Card>
           </CardColumns>
