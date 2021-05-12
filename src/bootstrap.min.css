@@ -2379,6 +2379,7 @@ textarea.form-control.is-invalid {
     padding: 0.5rem 1.1rem;
     font-size: 0.875rem;
     line-height: 1.5;
+    border-radius: 1.078em;
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion:reduce) {
@@ -2407,53 +2408,20 @@ fieldset:disabled a.btn {
     pointer-events: none;
 }
 .btn-primary {
-    border: 1px solid #000;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
     color: black;
-    border-radius: 1.087em;
-}
-.btn-primary:after {
-    content: "";
-    width: 0%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    background: white;
-    color: white;
-    border-radius: 1.087em;
-    opacity: 20%;
+    background-color: #fff;
+    border-color: black;
 }
 .btn-primary:hover {
     color: black;
-    border-radius: 1.087em;
-    opacity: 100%;
+    background-color: white;
+    border-color: black;
 }
-.btn-primary:hover:after {
-    width: 100%;
-    z-index: -1;
-    border-radius: 1.087em;
-    opacity: 100%;
-}
-
 .btn-primary.focus,
 .btn-primary:focus {
-    color: white;
-    border-radius: 1.087em;
-    background-color: gray;
+    color: black;
+    background-color: white;
     border-color: black;
-    transition:all 0.9s, color 0.3;
     box-shadow: 0 0 0 0.2rem rgba(105, 108, 114, 0);
 }
 .btn-primary.disabled,
@@ -2982,12 +2950,14 @@ fieldset:disabled a.btn {
     padding: 0.5rem 1rem;
     font-size: 1.32875rem;
     line-height: 1.5;
+    border-radius: 2.688em;
 }
 .btn-group-sm > .btn,
 .btn-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.688rem;
     line-height: 1.5;
+    border-radius: 0.844em;
 }
 .btn-block {
     display: block;

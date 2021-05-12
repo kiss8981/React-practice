@@ -55,3 +55,7 @@
 .question:hover {
   color: gray;
 }
+
+.body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
