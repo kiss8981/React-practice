@@ -57,7 +57,7 @@ class home extends Component {
             설명 페이지
           </p>
           <p>
-            <Button variant="primary" className="question">문의하기</Button>
+            <Button variant="secondary" className="question">문의하기</Button>
           </p>
           </Container>
         </Jumbotron>

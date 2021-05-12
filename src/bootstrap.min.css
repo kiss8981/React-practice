@@ -2448,16 +2448,48 @@ fieldset:disabled a.btn {
     border-color: #adb5bd;
 }
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #98a2ac;
-    border-color: #919ca6;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    color: black;
+    border-radius: 1.087em;
+}
+.btn-secondary:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    background: white;
+    color: white;
+    border-radius: 1.087em;
+    opacity: 20%;
+}
+.btn-secondary:hover:after {
+    width: 100%;
+    z-index: -1;
+    border-radius: 1.087em;
+    opacity: 100%;
 }
 .btn-secondary.focus,
 .btn-secondary:focus {
-    color: #fff;
-    background-color: #98a2ac;
-    border-color: #919ca6;
-    box-shadow: 0 0 0 0.2rem rgba(185,192,199,.5);
+    color: white;
+    border-radius: 1.087em;
+    background-color: gray;
+    border-color: black;
+    transition:all 0.9s, color 0.3;
+    box-shadow: 0 0 0 0.2rem rgba(105, 108, 114, 0);
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
