@@ -20,10 +20,6 @@
   opacity: 1;
 }
 
-.backgroundimg {
-  max-height: 650px;
-}
-
 .mainPage {
   text-align: left;
   margin-bottom: 15%;
@@ -54,4 +50,8 @@
 
 .header {
   position: relative;
+}
+
+.question:hover {
+  color: gray;
 }

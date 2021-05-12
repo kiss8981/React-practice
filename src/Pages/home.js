@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Carousel, Container, Jumbotron, Button, Card, CardColumns} from 'react-bootstrap';
-import backgroundimg from '../img/mainBackgroundIMG.svg'
 import 'holderjs';
 
 class home extends Component {
@@ -11,7 +10,7 @@ class home extends Component {
           <Carousel.Item>
             <img
               className="backgroundimg w-100"
-              src={backgroundimg}
+              src="holder.js/800x700?text=First slide&bg=373940"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -25,7 +24,7 @@ class home extends Component {
           <Carousel.Item>
             <img
               className="backgroundimg w-100"
-              src={backgroundimg}
+              src="holder.js/800x700?text=Second slide&bg=373940"
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -39,7 +38,7 @@ class home extends Component {
           <Carousel.Item>
             <img
               className="backgroundimg w-100"
-              src={backgroundimg}
+              src="holder.js/800x700?text=Third slide&bg=373940"
               alt="Third slide"
             />
             <Carousel.Caption>
@@ -58,7 +57,7 @@ class home extends Component {
             설명 페이지
           </p>
           <p>
-            <Button variant="primary">문의하기</Button>
+            <Button variant="primary" className="question">문의하기</Button>
           </p>
           </Container>
         </Jumbotron>
