@@ -20,10 +20,6 @@
   opacity: 1;
 }
 
-.backgroundimg {
-  max-height: 650px;
-}
-
 .mainPage {
   text-align: left;
   margin-bottom: 15%;
@@ -37,4 +33,29 @@
   color: white;
   background-color: white;
   max-width: 20%;
+}
+
+
+.card {
+  margin-top: 10px;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  margin-top: 10px;
+  margin: 0 auto;
+  transform: scale(1.03);
+}
+
+.header {
+  position: relative;
+}
+
+.question:hover {
+  color: gray;
+}
+
+.body {
+  font-family: 'Nanum Gothic Coding', monospace;
 }
