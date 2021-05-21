@@ -7,7 +7,7 @@ class blog extends Component {
     return (
       <Container>
         <div>
-            <h3> This is kdh's Blog </h3>
+            <h3> This is Dohyun's Blog </h3>
         </div>
       </Container>
     );
